@@ -8,7 +8,6 @@ public class symmetric
 	public static void main(String[] args)
 	{
 		int[][] a=new int[10][10];
-		int[][] b=new int[10][10];
 		int i,j;
 		read = new Scanner(System.in);
 		System.out.print("Enter the number of rows:");
@@ -24,7 +23,6 @@ public class symmetric
 				a[i][j]=read.nextInt();
 			}
 		}
-		
 		System.out.println("\n-----Matrix-----\n");
 		
 		for(i=0;i<r;i++)
@@ -35,8 +33,7 @@ public class symmetric
 			}
 			System.out.print("\n");
 		}
-		
-System.out.println("\n-----Traversed matrix-----\n");
+		System.out.println("\n-----Traversed matrix-----\n");
 		
 		for(i=0;i<r;i++)
 		{
