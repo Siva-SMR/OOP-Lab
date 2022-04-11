@@ -1,5 +1,6 @@
+import java.util.Scanner;
 
-class cpu1
+class cpu
 {
 	int price;
 	class processor
@@ -31,18 +32,23 @@ class cpu1
 		}
 	}
 }
-public class cpu
+public class computer
 {
-
 	public static void main(String[] args)
 	{
-		cpu1 c=new cpu1();
-		cpu1.processor p= c.new processor(2,"AMD");
-		cpu1.ram r=new cpu1.ram(4, "Crucial");
+		int i;
+		String j;
+		cpu c=new cpu();
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter the core:");
+		i = input.nextInt();
+		System.out.print("Enter the manufacturer:");
+		input.nextLine();
+		j = input.nextLine();
+		cpu.processor p= c.new processor(i,j);
+		cpu.ram r=new cpu.ram(4, "Crucial");
 		p.display();
 		r.display();
 		System.out.println();
-
 	}
-
 }
