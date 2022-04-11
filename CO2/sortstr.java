@@ -8,7 +8,7 @@ public class sortstr
 		String s,str;
 		String a[]=new String[30];
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter the string:");
+		System.out.print("Enter the string: ");
 		s = input.nextLine();
 		a = s.split(" ");
 		for(int i=0;i<a.length;i++)
@@ -24,7 +24,10 @@ public class sortstr
 			}
 		}
 		System.out.println("Sorted Order: ");
-		for (int i=0;i<a.length;i++) 
+		for (int i=0;i<a.length;i++)
+		{
 			System.out.println(a[i]);
+		}
+		input.close();
 	}
 }
