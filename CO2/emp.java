@@ -6,8 +6,8 @@ class employee
 {
 	int eNo;
 	String eName;
-	Double eSalary;
-	employee(int a,String b,Double c)
+	int eSalary;
+	employee(int a,String b,int c)
 	{
 		eNo=a;
 		eName=b;
@@ -32,7 +32,7 @@ public class emp
 			input.nextLine();
 			String b=input.nextLine();
 			System .out.println("Enter employee salary");
-			Double c=input.nextDouble();
+			int c=input.nextInt();
 			o[i]=new employee(a,b,c);
 			i++;
 		}
