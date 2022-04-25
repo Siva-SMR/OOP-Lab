@@ -22,7 +22,7 @@ public class searcharray
 		x = input.nextInt();
 		for(i=0;i<k;i++)
 		{
-			if(a[i]==k)
+			if(a[i]==x)
 			{
 				System.out.println("Number found");
 				b=1;
