@@ -22,22 +22,22 @@ public class emp
 		int i=0,f=0;
 		employee o[]=new employee[10];
 		System .out.println("Enter the number of employees");
-		Scanner s=new Scanner(System.in);
-		int n=s.nextInt();
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
 		while(i<n)
 		{
 			System .out.println("Enter employee id");
-			int a=s.nextInt();
+			int a=input.nextInt();
 			System .out.println("Enter employee name");
-			s.nextLine();
-			String b=s.nextLine();
+			input.nextLine();
+			String b=input.nextLine();
 			System .out.println("Enter employee salary");
-			Double c=s.nextDouble();
+			Double c=input.nextDouble();
 			o[i]=new employee(a,b,c);
 			i++;
 		}
 		System .out.println("Enter employee id to search details");
-		int a=s.nextInt();
+		int a=input.nextInt();
 		i=0;
 		while(i<n)
 		{
