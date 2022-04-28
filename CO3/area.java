@@ -11,9 +11,9 @@ class  shape
 	{
 		System.out.println("The area of the rectangle: " +(x*y));
 	}
-	void area(float z)
+	void area(double z)
 	{
-		double a = 3.14 * z * z;
+		double a = 3.14*(z*z);
 		System.out.println("The area of circle: " +a);
 	}
 }
@@ -25,7 +25,7 @@ public class area
 		shape obj = new shape();
 		obj.area(4);
 		obj.area(4,2);
-		obj.area(5);
+		obj.area(5.0);
 
 	}
 
