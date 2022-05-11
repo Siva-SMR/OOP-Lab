@@ -1,6 +1,4 @@
-
 import java.util.*;
-
 class  shape
 {
 	void area(int w)
@@ -19,14 +17,11 @@ class  shape
 }
 public class area
 {
-
 	public static void main(String[] args)
 	{
 		shape obj = new shape();
 		obj.area(4);
 		obj.area(4,2);
 		obj.area(5.0);
-
 	}
-
 }
