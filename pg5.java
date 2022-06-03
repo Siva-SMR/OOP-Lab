@@ -1,40 +1,34 @@
 package C3;
 
-import java.util.*;
+import.java.util.*;
 
-class Student
-{
-	String name;
-	int id,mark;
-	Student(String name,int id,int mark)
-	{
-		this.name=name;
-		this.id=id;
-		this.mark=mark;
-	}
-}
-
-class Sports
-{
-	String sname;
-	int trophies;
-	Sports(String name,int trophies)
-	{
-		this.sname=sname;
-		this.trophies=trophies;
-	}
-}
-
-class Result extends Student,Sports
-{
-	
-}
 public class pg5
 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args)
+	{
+		Result out=new Result();
+		out.display();
+		
 	}
+}
 
+interface Student
+{
+	String name="Ajil";
+	int Aos=27, Ai=41,Adbms=41;
+	
+}
+
+interface Sports
+{
+	int Credit=45;
+	
+}
+
+class Result implements Student, Sports
+{
+	void display()
+	{
+		System.out.println("Name: "+name\n"Marks for AOS: "+Aos )
+	}
 }
