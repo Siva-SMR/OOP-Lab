@@ -1,6 +1,6 @@
 package Graphics;
 
-interface figures
+interface shapes
 {
 	void rectangle(int length,int breadth);
 	void triangle(int breadth, int height);
@@ -9,7 +9,7 @@ interface figures
 	
 }
 
-public class pg1 implements figures
+public class pg1 implements shapes
 {
 	public void rectangle(int length,int breadth)
 	{
@@ -35,3 +35,4 @@ public class pg1 implements figures
 		
 	}
 }
+
