@@ -93,9 +93,19 @@ public class pg4
 			System.out.print("Enter the category: ");
 			String category=input.nextLine();
 			System.out.println();
+			if(category.equals(literature))
+			{
+				Fiction[] a=new fiction(pname,author,bname,bprice,category);
+				j++;
+			}
+			else
+			{
+				System.out.println("Category not found");
+			}
 			
 		 }
 		 
 	}
 
 }
+
